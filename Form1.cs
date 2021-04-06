@@ -9,19 +9,16 @@ namespace tchart
         {
             InitializeComponent();
         }
-
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            chart1.Series.Clear();
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < 100; i++)
             {
                 chart1.Series[0].Points.AddXY(i,i-5);
             }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            chart1.Series.Clear();
         }
     }
 }
