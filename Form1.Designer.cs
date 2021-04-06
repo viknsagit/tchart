@@ -31,27 +31,27 @@ namespace tchart
         {
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.graf = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graf)).BeginInit();
             this.SuspendLayout();
             // 
-            // chart1
+            // graf
             // 
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(12, 12);
-            this.chart1.Name = "chart1";
+            this.graf.ChartAreas.Add(chartArea1);
+            this.graf.Location = new System.Drawing.Point(12, 12);
+            this.graf.Name = "graf";
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
             series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(479, 351);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
+            this.graf.Series.Add(series1);
+            this.graf.Size = new System.Drawing.Size(479, 351);
+            this.graf.TabIndex = 0;
+            this.graf.Text = "chart1";
             // 
             // button1
             // 
@@ -68,9 +68,9 @@ namespace tchart
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 377);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Дописать";
+            this.label1.Text = "y=sqrtx-5";
             // 
             // button2
             // 
@@ -90,10 +90,10 @@ namespace tchart
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.graf);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.graf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,7 +101,7 @@ namespace tchart
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart graf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
