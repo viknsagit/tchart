@@ -9,24 +9,31 @@ namespace tchart
 {
     public partial class Form1 : MaterialForm
     {
+        bool coords = true;
         public Form1()
         {
            InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red400, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 100; i++)
+            if (coords == true)
             {
-                graf.Series[0].Points.AddXY(i,i-5);
+                for (int i = 0; i < 100; i++)
+                {
+                    graf.Series[0].Points.AddXY(i, i - 5);
+                    coords = false;
+                }
             }
+            
         }
         private void button2_Click(object sender, EventArgs e)
         {
             graf.Series[0].Points.Clear();
+            coords = true;
         }
     }
 }

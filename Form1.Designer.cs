@@ -46,7 +46,7 @@ namespace tchart
             this.graf.ChartAreas.Add(chartArea1);
             this.graf.Location = new System.Drawing.Point(6, 73);
             this.graf.Name = "graf";
-            this.graf.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
+            this.graf.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
