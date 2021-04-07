@@ -40,10 +40,13 @@ namespace tchart
             // 
             // graf
             // 
+            this.graf.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.graf.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center;
             chartArea1.Name = "ChartArea1";
             this.graf.ChartAreas.Add(chartArea1);
-            this.graf.Location = new System.Drawing.Point(12, 12);
+            this.graf.Location = new System.Drawing.Point(6, 73);
             this.graf.Name = "graf";
+            this.graf.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
@@ -55,7 +58,7 @@ namespace tchart
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 402);
+            this.button1.Location = new System.Drawing.Point(169, 430);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -66,7 +69,7 @@ namespace tchart
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 377);
+            this.label1.Location = new System.Drawing.Point(235, 456);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 2;
@@ -74,7 +77,7 @@ namespace tchart
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(103, 402);
+            this.button2.Location = new System.Drawing.Point(271, 430);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -86,13 +89,16 @@ namespace tchart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(501, 450);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(505, 476);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.graf);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.Text = "График";
             ((System.ComponentModel.ISupportInitialize)(this.graf)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
