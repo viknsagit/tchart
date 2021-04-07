@@ -29,8 +29,8 @@ namespace tchart
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.graf = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,16 +42,16 @@ namespace tchart
             // 
             this.graf.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.graf.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center;
-            chartArea1.Name = "ChartArea1";
-            this.graf.ChartAreas.Add(chartArea1);
+            chartArea3.Name = "ChartArea1";
+            this.graf.ChartAreas.Add(chartArea3);
             this.graf.Location = new System.Drawing.Point(6, 73);
             this.graf.Name = "graf";
             this.graf.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Name = "Series1";
-            this.graf.Series.Add(series1);
+            series3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.BackwardDiagonal;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Name = "Series1";
+            this.graf.Series.Add(series3);
             this.graf.Size = new System.Drawing.Size(479, 351);
             this.graf.TabIndex = 0;
             this.graf.Text = "chart1";
@@ -89,7 +89,7 @@ namespace tchart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(505, 476);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
